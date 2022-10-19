@@ -13,12 +13,12 @@ function checkSsn() {
   let usersSsn = usersInput.value.split("");
   console.log(usersSsn);
   console.log(usersSsn);
-  //Skapa en lista med varannan siffra som ska multipliceras med 2.
+  //Skapa en lista med varannan siffra som ska multipliceras med 2. Börjar på index 0 och tar sedan varannan siffra.
   for (let i = 0; i < usersSsn.length; i += 2) {
     numbersToMultiplyWithTwo.push(usersSsn[i]);
   }
 
-  //Skapa en lista med övriga siffror som ska multipliceras med 1.
+  //Skapa en lista med övriga siffror som ska multipliceras med 1. Börjar på index 1 och tar sedan varannan siffra.
   for (let i = 1; i < usersSsn.length; i += 2) {
     numbersToMultiplyWithOne.push(usersSsn[i]);
   }
